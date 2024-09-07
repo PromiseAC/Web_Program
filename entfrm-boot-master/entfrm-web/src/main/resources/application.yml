@@ -1,0 +1,95 @@
+# 项目配置
+entfrm:
+  # 名称
+  name: entfrm开发平台
+  # 版本
+  version: 3.0.0
+  # 文件上传路径
+  profile: C:/profile/
+  # 获取ip地址开关
+  addressSwitch: true
+  # redis开关
+  redisSwitch: true
+  #en_US 英语  zh_CN 简体中文
+  lang: zh_CN
+
+# 开发环境配置
+server:
+  # 服务端口
+  port: 8888
+  servlet:
+    # 项目contextPath
+    context-path: /
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # tomcat最大线程数，默认为200 初始化的线程数，默认值10
+    threads:
+      max: 200
+      min-spare: 10
+
+# 用户配置
+user:
+  password:
+    # 密码错误{maxRetryCount}次锁定10分钟
+    maxRetryCount: 5
+
+# Spring配置
+spring:
+  # 资源信息
+  messages:
+    # 国际化资源文件路径
+    basename: i18n/messages
+    encoding: utf-8
+  # 序列化
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  profiles:
+    active: dev
+  # 文件上传
+  servlet:
+     multipart:
+       max-file-size:  50MB
+       max-request-size:  30MB
+  # 服务模块
+  devtools:
+    restart:
+      # 热部署开关
+      enabled: true
+
+# MyBatis Plus
+mybatis-plus:
+  mapper-locations:
+    - classpath*:mapper/**/*.xml
+  typeAliasesPackage: com.entfrm.**.entity
+  global-config:
+    # 不显示banner
+    banner: false
+    # 数据库相关配置
+    db-config:
+      #主键类型  AUTO:"数据库ID自增", INPUT:"用户输入ID",ID_WORKER:"全局唯一ID (数字类型唯一ID)", UUID:"全局唯一ID UUID";
+      id-type: AUTO
+  configuration:
+    call-setters-on-nulls: true
+
+# Sa-Token配置
+sa-token:
+  # 关闭Cookie模式
+  is-read-cookie: false
+
+# 防止XSS攻击
+xss:
+  # 过滤开关
+  enabled: true
+  # 排除链接（多个用逗号分隔）
+  excludes: /system/datasource/save,/system/datasource/update,/toolkit/dataset/*,/cms/article/*
+  # 匹配链接
+  urlPatterns: /system/*,/monitor/*,/toolkit/*,/quartz/*,/activiti/*,/cms/*
+
+# 日志配置
+logging:
+  level:
+    com.entfrm: debug
+    org.springframework: WARN
+    org.spring.springboot.dao: debug

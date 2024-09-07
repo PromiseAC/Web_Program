@@ -1,0 +1,1006 @@
+2024-09-07 00:35:08,901 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 9972 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 00:35:08,904 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 00:35:08,905 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 00:35:11,644 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 00:35:11,664 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 00:35:11,850 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 00:35:11,957 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:80 - 成功获取数据库连接
+2024-09-07 00:35:12,023 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:998 - {dataSource-1,master} inited
+2024-09-07 00:35:12,027 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:148 - dynamic-datasource - add a datasource named [master] success
+2024-09-07 00:35:12,027 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:228 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-09-07 00:35:12,464 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleDept".
+2024-09-07 00:35:12,464 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 00:35:12,530 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleMenu".
+2024-09-07 00:35:12,530 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 00:35:12,609 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.UserRole".
+2024-09-07 00:35:12,611 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.UserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 00:35:14,522 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1220 - Using default implementation for ThreadExecutor
+2024-09-07 00:35:14,531 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] SchedulerSignalerImpl.java:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-09-07 00:35:14,533 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:229 - Quartz Scheduler v.2.3.2 created.
+2024-09-07 00:35:14,533 [main] INFO  [org.quartz.simpl.RAMJobStore] RAMJobStore.java:155 - RAMJobStore initialized.
+2024-09-07 00:35:14,534 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-09-07 00:35:14,534 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-09-07 00:35:14,534 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1378 - Quartz scheduler version: 2.3.2
+2024-09-07 00:35:14,535 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5db0003d
+2024-09-07 00:35:14,591 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,job_name,job_group,invoke_target,cron_expression,misfire_policy,concurrent,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_job WHERE del_flag='0'
+2024-09-07 00:35:14,607 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 00:35:14,621 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 3
+2024-09-07 00:35:15,431 [main] INFO  [io.undertow] Undertow.java:120 - starting server: Undertow - 2.2.14.Final
+2024-09-07 00:35:15,440 [main] INFO  [org.xnio] Xnio.java:95 - XNIO version 3.8.4.Final
+2024-09-07 00:35:15,589 [main] INFO  [org.xnio.nio] NioXnio.java:58 - XNIO NIO Implementation Version 3.8.4.Final
+2024-09-07 00:35:15,625 [main] INFO  [org.jboss.threads] Version.java:52 - JBoss Threads version 3.1.0.Final
+2024-09-07 00:35:15,914 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-09-07 00:35:15,922 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:61 - Started WebApplication in 7.532 seconds (JVM running for 8.969)
+2024-09-07 00:57:53,733 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 00:57:53,734 [SpringApplicationShutdownHook] INFO  [io.undertow] Undertow.java:259 - stopping server: Undertow - 2.2.14.Final
+2024-09-07 00:57:53,781 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-09-07 00:57:53,781 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 00:57:53,782 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-09-07 00:57:53,798 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:205 - dynamic-datasource start closing ....
+2024-09-07 00:57:53,800 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2071 - {dataSource-1} closing ...
+2024-09-07 00:57:53,801 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2144 - {dataSource-1} closed
+2024-09-07 00:57:53,802 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:209 - dynamic-datasource all closed success,bye
+2024-09-07 00:58:20,611 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 24940 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 00:58:20,614 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 00:58:20,614 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 00:58:22,384 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 00:58:22,411 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 00:58:22,601 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 00:58:22,718 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:80 - 成功获取数据库连接
+2024-09-07 00:58:22,775 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:998 - {dataSource-1,master} inited
+2024-09-07 00:58:22,779 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:148 - dynamic-datasource - add a datasource named [master] success
+2024-09-07 00:58:22,780 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:228 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-09-07 00:58:23,203 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleDept".
+2024-09-07 00:58:23,203 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 00:58:23,237 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleMenu".
+2024-09-07 00:58:23,237 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 00:58:23,301 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.UserRole".
+2024-09-07 00:58:23,301 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.UserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 00:58:24,986 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1220 - Using default implementation for ThreadExecutor
+2024-09-07 00:58:24,997 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] SchedulerSignalerImpl.java:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-09-07 00:58:24,997 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:229 - Quartz Scheduler v.2.3.2 created.
+2024-09-07 00:58:24,998 [main] INFO  [org.quartz.simpl.RAMJobStore] RAMJobStore.java:155 - RAMJobStore initialized.
+2024-09-07 00:58:24,998 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-09-07 00:58:24,998 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-09-07 00:58:24,998 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1378 - Quartz scheduler version: 2.3.2
+2024-09-07 00:58:24,998 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@200d1a3d
+2024-09-07 00:58:25,057 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,job_name,job_group,invoke_target,cron_expression,misfire_policy,concurrent,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_job WHERE del_flag='0'
+2024-09-07 00:58:25,072 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 00:58:25,087 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 3
+2024-09-07 00:58:25,936 [main] INFO  [io.undertow] Undertow.java:120 - starting server: Undertow - 2.2.14.Final
+2024-09-07 00:58:26,090 [main] INFO  [org.xnio] Xnio.java:95 - XNIO version 3.8.4.Final
+2024-09-07 00:58:26,098 [main] INFO  [org.xnio.nio] NioXnio.java:58 - XNIO NIO Implementation Version 3.8.4.Final
+2024-09-07 00:58:26,134 [main] INFO  [org.jboss.threads] Version.java:52 - JBoss Threads version 3.1.0.Final
+2024-09-07 00:58:26,463 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-09-07 00:58:26,471 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:61 - Started WebApplication in 6.287 seconds (JVM running for 7.478)
+2024-09-07 01:04:04,869 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 01:04:04,870 [SpringApplicationShutdownHook] INFO  [io.undertow] Undertow.java:259 - stopping server: Undertow - 2.2.14.Final
+2024-09-07 01:04:04,881 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-09-07 01:04:04,881 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 01:04:04,882 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-09-07 01:04:04,899 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:205 - dynamic-datasource start closing ....
+2024-09-07 01:04:04,900 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2071 - {dataSource-1} closing ...
+2024-09-07 01:04:04,901 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2144 - {dataSource-1} closed
+2024-09-07 01:04:04,902 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:209 - dynamic-datasource all closed success,bye
+2024-09-07 01:10:11,203 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 17108 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 01:10:11,205 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 01:10:11,205 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 01:10:13,266 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 01:10:13,289 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 01:10:13,483 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 01:10:13,583 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:80 - 成功获取数据库连接
+2024-09-07 01:10:13,637 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:998 - {dataSource-1,master} inited
+2024-09-07 01:10:13,641 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:148 - dynamic-datasource - add a datasource named [master] success
+2024-09-07 01:10:13,642 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:228 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-09-07 01:10:13,998 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleDept".
+2024-09-07 01:10:13,999 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 01:10:14,038 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleMenu".
+2024-09-07 01:10:14,038 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 01:10:14,083 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.UserRole".
+2024-09-07 01:10:14,084 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.UserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 01:10:15,763 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1220 - Using default implementation for ThreadExecutor
+2024-09-07 01:10:15,773 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] SchedulerSignalerImpl.java:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-09-07 01:10:15,773 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:229 - Quartz Scheduler v.2.3.2 created.
+2024-09-07 01:10:15,774 [main] INFO  [org.quartz.simpl.RAMJobStore] RAMJobStore.java:155 - RAMJobStore initialized.
+2024-09-07 01:10:15,775 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-09-07 01:10:15,775 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-09-07 01:10:15,775 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1378 - Quartz scheduler version: 2.3.2
+2024-09-07 01:10:15,775 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7f12094d
+2024-09-07 01:10:15,834 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,job_name,job_group,invoke_target,cron_expression,misfire_policy,concurrent,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_job WHERE del_flag='0'
+2024-09-07 01:10:15,854 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 01:10:15,868 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 3
+2024-09-07 01:10:16,729 [main] INFO  [io.undertow] Undertow.java:120 - starting server: Undertow - 2.2.14.Final
+2024-09-07 01:10:16,734 [main] INFO  [org.xnio] Xnio.java:95 - XNIO version 3.8.4.Final
+2024-09-07 01:10:16,867 [main] INFO  [org.xnio.nio] NioXnio.java:58 - XNIO NIO Implementation Version 3.8.4.Final
+2024-09-07 01:10:16,900 [main] INFO  [org.jboss.threads] Version.java:52 - JBoss Threads version 3.1.0.Final
+2024-09-07 01:10:17,181 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-09-07 01:10:17,187 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:61 - Started WebApplication in 6.352 seconds (JVM running for 11.808)
+2024-09-07 01:10:37,470 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 01:10:37,471 [SpringApplicationShutdownHook] INFO  [io.undertow] Undertow.java:259 - stopping server: Undertow - 2.2.14.Final
+2024-09-07 01:10:37,484 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-09-07 01:10:37,484 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 01:10:37,484 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-09-07 01:10:37,500 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:205 - dynamic-datasource start closing ....
+2024-09-07 01:10:37,502 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2071 - {dataSource-1} closing ...
+2024-09-07 01:10:37,504 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2144 - {dataSource-1} closed
+2024-09-07 01:10:37,504 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:209 - dynamic-datasource all closed success,bye
+2024-09-07 01:10:43,398 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 9264 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 01:10:43,400 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 01:10:43,400 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 01:10:44,914 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 01:10:44,936 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 01:10:45,116 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 01:10:45,212 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:80 - 成功获取数据库连接
+2024-09-07 01:10:45,268 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:998 - {dataSource-1,master} inited
+2024-09-07 01:10:45,272 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:148 - dynamic-datasource - add a datasource named [master] success
+2024-09-07 01:10:45,272 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:228 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-09-07 01:10:45,607 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleDept".
+2024-09-07 01:10:45,607 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 01:10:45,634 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleMenu".
+2024-09-07 01:10:45,634 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 01:10:45,677 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.UserRole".
+2024-09-07 01:10:45,677 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.UserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 01:10:47,248 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1220 - Using default implementation for ThreadExecutor
+2024-09-07 01:10:47,258 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] SchedulerSignalerImpl.java:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-09-07 01:10:47,258 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:229 - Quartz Scheduler v.2.3.2 created.
+2024-09-07 01:10:47,259 [main] INFO  [org.quartz.simpl.RAMJobStore] RAMJobStore.java:155 - RAMJobStore initialized.
+2024-09-07 01:10:47,259 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-09-07 01:10:47,260 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-09-07 01:10:47,260 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1378 - Quartz scheduler version: 2.3.2
+2024-09-07 01:10:47,260 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@23564dd2
+2024-09-07 01:10:47,315 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,job_name,job_group,invoke_target,cron_expression,misfire_policy,concurrent,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_job WHERE del_flag='0'
+2024-09-07 01:10:47,329 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 01:10:47,343 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 3
+2024-09-07 01:10:48,164 [main] INFO  [io.undertow] Undertow.java:120 - starting server: Undertow - 2.2.14.Final
+2024-09-07 01:10:48,169 [main] INFO  [org.xnio] Xnio.java:95 - XNIO version 3.8.4.Final
+2024-09-07 01:10:48,318 [main] INFO  [org.xnio.nio] NioXnio.java:58 - XNIO NIO Implementation Version 3.8.4.Final
+2024-09-07 01:10:48,351 [main] INFO  [org.jboss.threads] Version.java:52 - JBoss Threads version 3.1.0.Final
+2024-09-07 01:10:48,639 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-09-07 01:10:48,645 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:61 - Started WebApplication in 5.629 seconds (JVM running for 6.746)
+2024-09-07 01:11:03,642 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 01:11:03,643 [SpringApplicationShutdownHook] INFO  [io.undertow] Undertow.java:259 - stopping server: Undertow - 2.2.14.Final
+2024-09-07 01:11:03,656 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-09-07 01:11:03,656 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 01:11:03,657 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-09-07 01:11:03,672 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:205 - dynamic-datasource start closing ....
+2024-09-07 01:11:03,674 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2071 - {dataSource-1} closing ...
+2024-09-07 01:11:03,675 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2144 - {dataSource-1} closed
+2024-09-07 01:11:03,676 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:209 - dynamic-datasource all closed success,bye
+2024-09-07 01:11:07,974 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 4484 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 01:11:07,977 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 01:11:07,977 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 01:11:09,569 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 01:11:09,592 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 01:11:09,775 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 01:11:09,874 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:80 - 成功获取数据库连接
+2024-09-07 01:11:09,932 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:998 - {dataSource-1,master} inited
+2024-09-07 01:11:09,936 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:148 - dynamic-datasource - add a datasource named [master] success
+2024-09-07 01:11:09,937 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:228 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-09-07 01:11:10,282 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleDept".
+2024-09-07 01:11:10,282 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 01:11:10,309 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleMenu".
+2024-09-07 01:11:10,314 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 01:11:10,356 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.UserRole".
+2024-09-07 01:11:10,357 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.UserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 01:11:11,946 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1220 - Using default implementation for ThreadExecutor
+2024-09-07 01:11:11,955 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] SchedulerSignalerImpl.java:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-09-07 01:11:11,956 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:229 - Quartz Scheduler v.2.3.2 created.
+2024-09-07 01:11:11,956 [main] INFO  [org.quartz.simpl.RAMJobStore] RAMJobStore.java:155 - RAMJobStore initialized.
+2024-09-07 01:11:11,957 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-09-07 01:11:11,957 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-09-07 01:11:11,957 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1378 - Quartz scheduler version: 2.3.2
+2024-09-07 01:11:11,957 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7de147e9
+2024-09-07 01:11:12,013 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,job_name,job_group,invoke_target,cron_expression,misfire_policy,concurrent,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_job WHERE del_flag='0'
+2024-09-07 01:11:12,027 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 01:11:12,040 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 3
+2024-09-07 01:11:12,858 [main] INFO  [io.undertow] Undertow.java:120 - starting server: Undertow - 2.2.14.Final
+2024-09-07 01:11:12,865 [main] INFO  [org.xnio] Xnio.java:95 - XNIO version 3.8.4.Final
+2024-09-07 01:11:13,009 [main] INFO  [org.xnio.nio] NioXnio.java:58 - XNIO NIO Implementation Version 3.8.4.Final
+2024-09-07 01:11:13,041 [main] INFO  [org.jboss.threads] Version.java:52 - JBoss Threads version 3.1.0.Final
+2024-09-07 01:11:13,347 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-09-07 01:11:13,354 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:61 - Started WebApplication in 5.793 seconds (JVM running for 6.901)
+2024-09-07 01:11:20,569 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 01:11:20,571 [SpringApplicationShutdownHook] INFO  [io.undertow] Undertow.java:259 - stopping server: Undertow - 2.2.14.Final
+2024-09-07 01:11:20,582 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-09-07 01:11:20,583 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 01:11:20,583 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-09-07 01:11:20,598 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:205 - dynamic-datasource start closing ....
+2024-09-07 01:11:20,600 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2071 - {dataSource-1} closing ...
+2024-09-07 01:11:20,603 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2144 - {dataSource-1} closed
+2024-09-07 01:11:20,603 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:209 - dynamic-datasource all closed success,bye
+2024-09-07 09:51:34,538 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 17080 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 09:51:34,540 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 09:51:34,540 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 09:51:36,520 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 09:51:36,543 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 09:51:36,770 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 09:51:36,880 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+2024-09-07 09:51:36,904 [main] ERROR [org.springframework.boot.SpringApplication] SpringApplication.java:854 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.entfrm.web.WebApplication.main(WebApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 58 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.util.HashMap.putMapEntries(HashMap.java:502)
+	at java.util.HashMap.putAll(HashMap.java:786)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 69 common frames omitted
+2024-09-07 09:51:47,627 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 18592 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 09:51:47,630 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 09:51:47,631 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 09:51:49,133 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 09:51:49,156 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 09:51:49,345 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 09:51:49,438 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+2024-09-07 09:51:49,458 [main] ERROR [org.springframework.boot.SpringApplication] SpringApplication.java:854 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.entfrm.web.WebApplication.main(WebApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 58 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.util.HashMap.putMapEntries(HashMap.java:502)
+	at java.util.HashMap.putAll(HashMap.java:786)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 69 common frames omitted
+2024-09-07 09:52:51,627 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 22956 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 09:52:51,631 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 09:52:51,631 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 09:52:53,107 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 09:52:53,127 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 09:52:53,303 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 09:52:53,396 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+2024-09-07 09:52:53,416 [main] ERROR [org.springframework.boot.SpringApplication] SpringApplication.java:854 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.entfrm.web.WebApplication.main(WebApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 58 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.util.HashMap.putMapEntries(HashMap.java:502)
+	at java.util.HashMap.putAll(HashMap.java:786)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 69 common frames omitted
+2024-09-07 09:53:40,752 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 18568 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 09:53:40,754 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 09:53:40,755 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 09:53:42,284 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 09:53:42,304 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 09:53:42,483 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 09:53:42,578 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+2024-09-07 09:53:42,598 [main] ERROR [org.springframework.boot.SpringApplication] SpringApplication.java:854 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.entfrm.web.WebApplication.main(WebApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 58 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.util.HashMap.putMapEntries(HashMap.java:502)
+	at java.util.HashMap.putAll(HashMap.java:786)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 69 common frames omitted
+2024-09-07 09:55:50,056 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 20196 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 09:55:50,058 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 09:55:50,058 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 09:55:51,689 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 09:55:51,709 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 09:55:51,885 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 09:55:51,984 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+2024-09-07 09:55:52,004 [main] ERROR [org.springframework.boot.SpringApplication] SpringApplication.java:854 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.entfrm.web.WebApplication.main(WebApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 58 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.util.HashMap.putMapEntries(HashMap.java:502)
+	at java.util.HashMap.putAll(HashMap.java:786)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 69 common frames omitted
+2024-09-07 09:57:49,770 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 10024 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 09:57:49,772 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 09:57:49,773 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 09:57:51,241 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 09:57:51,262 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 09:57:51,435 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 09:57:51,527 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+2024-09-07 09:57:51,548 [main] ERROR [org.springframework.boot.SpringApplication] SpringApplication.java:854 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationController' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\controller\ApplicationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.entfrm.web.WebApplication.main(WebApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applicationMapper' defined in file [F:\Code\Web\Program\entfrm-boot-master\entfrm-biz\entfrm-system\target\classes\com\entfrm\system\mapper\ApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 58 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.util.HashMap.putMapEntries(HashMap.java:502)
+	at java.util.HashMap.putAll(HashMap.java:786)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 69 common frames omitted
+2024-09-07 10:01:10,914 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 4372 (F:\Code\Web\Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Program)
+2024-09-07 10:01:10,917 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 10:01:10,917 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 10:01:12,393 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 10:01:12,413 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 10:01:12,620 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 10:01:12,722 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:80 - 成功获取数据库连接
+2024-09-07 10:01:12,804 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:998 - {dataSource-1,master} inited
+2024-09-07 10:01:12,807 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:148 - dynamic-datasource - add a datasource named [master] success
+2024-09-07 10:01:12,808 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:228 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-09-07 10:01:13,151 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleDept".
+2024-09-07 10:01:13,151 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 10:01:13,192 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleMenu".
+2024-09-07 10:01:13,193 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 10:01:13,237 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.UserRole".
+2024-09-07 10:01:13,237 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.UserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 10:01:14,815 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1220 - Using default implementation for ThreadExecutor
+2024-09-07 10:01:14,828 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] SchedulerSignalerImpl.java:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-09-07 10:01:14,828 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:229 - Quartz Scheduler v.2.3.2 created.
+2024-09-07 10:01:14,829 [main] INFO  [org.quartz.simpl.RAMJobStore] RAMJobStore.java:155 - RAMJobStore initialized.
+2024-09-07 10:01:14,830 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-09-07 10:01:14,830 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-09-07 10:01:14,830 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1378 - Quartz scheduler version: 2.3.2
+2024-09-07 10:01:14,830 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7de147e9
+2024-09-07 10:01:14,893 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,job_name,job_group,invoke_target,cron_expression,misfire_policy,concurrent,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_job WHERE del_flag='0'
+2024-09-07 10:01:14,910 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 10:01:14,936 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 3
+2024-09-07 10:01:15,828 [main] INFO  [io.undertow] Undertow.java:120 - starting server: Undertow - 2.2.14.Final
+2024-09-07 10:01:15,835 [main] INFO  [org.xnio] Xnio.java:95 - XNIO version 3.8.4.Final
+2024-09-07 10:01:15,844 [main] INFO  [org.xnio.nio] NioXnio.java:58 - XNIO NIO Implementation Version 3.8.4.Final
+2024-09-07 10:01:15,887 [main] INFO  [org.jboss.threads] Version.java:52 - JBoss Threads version 3.1.0.Final
+2024-09-07 10:01:16,315 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-09-07 10:01:16,322 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:61 - Started WebApplication in 5.785 seconds (JVM running for 6.829)
+2024-09-07 10:16:31,848 [XNIO-1 task-1] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-07 10:16:40,715 [XNIO-1 task-1] WARN  [com.alibaba.druid.pool.DruidAbstractDataSource] DruidAbstractDataSource.java:1494 - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/entfrm?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&nullCatalogMeansCurrent=true, version : 1.2.8, lastPacketReceivedIdleMillis : 925785
+2024-09-07 10:16:40,718 [XNIO-1 task-1] DEBUG [com.entfrm.system.mapper.UserMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,user_name,password,nick_name,type,phone,sex,avatar,email,dept_id,dept_name,login_ip,login_time,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_user WHERE del_flag='0' AND (user_name = ?)
+2024-09-07 10:16:40,720 [XNIO-1 task-1] DEBUG [com.entfrm.system.mapper.UserMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: entfrm(String)
+2024-09-07 10:16:40,733 [XNIO-1 task-1] DEBUG [com.entfrm.system.mapper.UserMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 1
+2024-09-07 10:16:40,747 [XNIO-1 task-1] DEBUG [c.e.system.mapper.RoleMapper.selectRolesByUserId] BaseJdbcLogger.java:137 - ==>  Preparing: select distinct r.id, r.name, r.code, r.data_scope, r.sort, r.del_flag, r.create_time, r.remarks from sys_role r left join sys_user_role ur on ur.role_id = r.id left join sys_user u on u.id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+2024-09-07 10:16:40,749 [XNIO-1 task-1] DEBUG [c.e.system.mapper.RoleMapper.selectRolesByUserId] BaseJdbcLogger.java:137 - ==> Parameters: 1(Integer)
+2024-09-07 10:16:40,775 [XNIO-1 task-1] DEBUG [c.e.system.mapper.RoleMapper.selectRolesByUserId] BaseJdbcLogger.java:137 - <==      Total: 1
+2024-09-07 10:16:40,779 [XNIO-1 task-1] DEBUG [c.e.system.mapper.MenuMapper.selectPermsByRoleId] BaseJdbcLogger.java:137 - ==>  Preparing: select m.perms from sys_menu m left join sys_role_menu rm on m.id = rm.menu_id where rm.role_id = ? and m.id not in (select m.parent_id from sys_menu m inner join sys_role_menu rm on m.id = rm.menu_id and rm.role_id = ?) order by m.parent_id, m.sort
+2024-09-07 10:16:40,780 [XNIO-1 task-1] DEBUG [c.e.system.mapper.MenuMapper.selectPermsByRoleId] BaseJdbcLogger.java:137 - ==> Parameters: 1(Integer), 1(Integer)
+2024-09-07 10:16:40,800 [XNIO-1 task-1] DEBUG [c.e.system.mapper.MenuMapper.selectPermsByRoleId] BaseJdbcLogger.java:137 - <==      Total: 89
+2024-09-07 10:16:40,864 [XNIO-1 task-1] DEBUG [com.entfrm.log.aspect.SysLogAspect] SysLogAspect.java:55 - [类名]:com.entfrm.system.controller.AuthController,[方法]:login,[耗时]:172毫秒
+2024-09-07 10:16:41,188 [XNIO-1 task-1] DEBUG [c.e.s.mapper.MenuMapper.selectMenuListByRoleId] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT m.* FROM sys_menu m LEFT JOIN sys_role_menu rm ON m.id = rm.menu_id WHERE m.del_flag = 0 and m.type in ('M', 'C') AND rm.role_id = ? ORDER BY m.parent_id, m.sort
+2024-09-07 10:16:41,189 [XNIO-1 task-1] DEBUG [c.e.s.mapper.MenuMapper.selectMenuListByRoleId] BaseJdbcLogger.java:137 - ==> Parameters: 1(Integer)
+2024-09-07 10:16:41,200 [XNIO-1 task-1] DEBUG [c.e.s.mapper.MenuMapper.selectMenuListByRoleId] BaseJdbcLogger.java:137 - <==      Total: 24
+2024-09-07 10:16:41,583 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,name,region,icon,bg_color,path,sort,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_shortcut WHERE del_flag='0' ORDER BY sort ASC
+2024-09-07 10:16:41,584 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 10:16:41,596 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 2
+2024-09-07 10:18:59,529 [XNIO-1 task-1] WARN  [com.alibaba.druid.pool.DruidAbstractDataSource] DruidAbstractDataSource.java:1494 - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/entfrm?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&nullCatalogMeansCurrent=true, version : 1.2.8, lastPacketReceivedIdleMillis : 137933
+2024-09-07 10:18:59,532 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.DictDataMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,dict_type,label,value,sort,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_dict_data WHERE del_flag='0' AND (dict_type = ?) ORDER BY sort ASC
+2024-09-07 10:18:59,532 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.DictDataMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: status(String)
+2024-09-07 10:18:59,536 [XNIO-1 task-1] DEBUG [com.entfrm.system.mapper.DictDataMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,dict_type,label,value,sort,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_dict_data WHERE del_flag='0' AND (dict_type = ?) ORDER BY sort ASC
+2024-09-07 10:18:59,537 [XNIO-1 task-1] DEBUG [com.entfrm.system.mapper.DictDataMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: yes_no(String)
+2024-09-07 10:18:59,544 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.DictDataMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 2
+2024-09-07 10:18:59,544 [XNIO-1 task-1] DEBUG [com.entfrm.system.mapper.DictDataMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 2
+2024-09-07 10:18:59,567 [XNIO-1 task-3] DEBUG [c.e.system.mapper.DictMapper.selectPage_mpCount] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT COUNT(*) AS total FROM sys_dict WHERE del_flag = '0'
+2024-09-07 10:18:59,567 [XNIO-1 task-3] DEBUG [c.e.system.mapper.DictMapper.selectPage_mpCount] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 10:18:59,577 [XNIO-1 task-3] DEBUG [c.e.system.mapper.DictMapper.selectPage_mpCount] BaseJdbcLogger.java:137 - <==      Total: 1
+2024-09-07 10:18:59,580 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.DictMapper.selectPage] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,name,type,is_sys,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_dict WHERE del_flag='0' ORDER BY id DESC LIMIT ?
+2024-09-07 10:18:59,581 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.DictMapper.selectPage] BaseJdbcLogger.java:137 - ==> Parameters: 10(Long)
+2024-09-07 10:18:59,584 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.DictMapper.selectPage] BaseJdbcLogger.java:137 - <==      Total: 10
+2024-09-07 10:19:05,162 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.UserMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,user_name,password,nick_name,type,phone,sex,avatar,email,dept_id,dept_name,login_ip,login_time,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_user WHERE del_flag='0' AND (user_name = ?)
+2024-09-07 10:19:05,163 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.UserMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: entfrm(String)
+2024-09-07 10:19:05,165 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.UserMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 1
+2024-09-07 10:19:05,166 [XNIO-1 task-3] DEBUG [c.e.system.mapper.RoleMapper.selectRolesByUserId] BaseJdbcLogger.java:137 - ==>  Preparing: select distinct r.id, r.name, r.code, r.data_scope, r.sort, r.del_flag, r.create_time, r.remarks from sys_role r left join sys_user_role ur on ur.role_id = r.id left join sys_user u on u.id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+2024-09-07 10:19:05,166 [XNIO-1 task-3] DEBUG [c.e.system.mapper.RoleMapper.selectRolesByUserId] BaseJdbcLogger.java:137 - ==> Parameters: 1(Integer)
+2024-09-07 10:19:05,168 [XNIO-1 task-3] DEBUG [c.e.system.mapper.RoleMapper.selectRolesByUserId] BaseJdbcLogger.java:137 - <==      Total: 1
+2024-09-07 10:19:05,168 [XNIO-1 task-3] DEBUG [c.e.system.mapper.MenuMapper.selectPermsByRoleId] BaseJdbcLogger.java:137 - ==>  Preparing: select m.perms from sys_menu m left join sys_role_menu rm on m.id = rm.menu_id where rm.role_id = ? and m.id not in (select m.parent_id from sys_menu m inner join sys_role_menu rm on m.id = rm.menu_id and rm.role_id = ?) order by m.parent_id, m.sort
+2024-09-07 10:19:05,169 [XNIO-1 task-3] DEBUG [c.e.system.mapper.MenuMapper.selectPermsByRoleId] BaseJdbcLogger.java:137 - ==> Parameters: 1(Integer), 1(Integer)
+2024-09-07 10:19:05,171 [XNIO-1 task-3] DEBUG [c.e.system.mapper.MenuMapper.selectPermsByRoleId] BaseJdbcLogger.java:137 - <==      Total: 89
+2024-09-07 10:19:05,179 [XNIO-1 task-3] DEBUG [com.entfrm.log.aspect.SysLogAspect] SysLogAspect.java:55 - [类名]:com.entfrm.system.controller.AuthController,[方法]:login,[耗时]:19毫秒
+2024-09-07 10:19:05,544 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,name,region,icon,bg_color,path,sort,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_shortcut WHERE del_flag='0' ORDER BY sort ASC
+2024-09-07 10:19:05,545 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 10:19:05,547 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 2
+2024-09-07 10:21:10,834 [XNIO-1 task-3] WARN  [com.alibaba.druid.pool.DruidAbstractDataSource] DruidAbstractDataSource.java:1494 - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/entfrm?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&nullCatalogMeansCurrent=true, version : 1.2.8, lastPacketReceivedIdleMillis : 125288
+2024-09-07 10:21:10,835 [XNIO-1 task-3] WARN  [com.alibaba.druid.pool.DruidAbstractDataSource] DruidAbstractDataSource.java:1494 - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/entfrm?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&nullCatalogMeansCurrent=true, version : 1.2.8, lastPacketReceivedIdleMillis : 131291
+2024-09-07 10:21:10,837 [XNIO-1 task-3] DEBUG [c.e.system.mapper.DictMapper.selectPage_mpCount] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT COUNT(*) AS total FROM sys_dict WHERE del_flag = '0'
+2024-09-07 10:21:10,837 [XNIO-1 task-3] DEBUG [c.e.system.mapper.DictMapper.selectPage_mpCount] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 10:21:10,839 [XNIO-1 task-3] DEBUG [c.e.system.mapper.DictMapper.selectPage_mpCount] BaseJdbcLogger.java:137 - <==      Total: 1
+2024-09-07 10:21:10,839 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.DictMapper.selectPage] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,name,type,is_sys,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_dict WHERE del_flag='0' ORDER BY id DESC LIMIT ?
+2024-09-07 10:21:10,840 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.DictMapper.selectPage] BaseJdbcLogger.java:137 - ==> Parameters: 10(Long)
+2024-09-07 10:21:10,842 [XNIO-1 task-3] DEBUG [com.entfrm.system.mapper.DictMapper.selectPage] BaseJdbcLogger.java:137 - <==      Total: 10
+2024-09-07 10:21:14,441 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,name,region,icon,bg_color,path,sort,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_shortcut WHERE del_flag='0' ORDER BY sort ASC
+2024-09-07 10:21:14,442 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 10:21:14,443 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 2
+2024-09-07 10:21:23,653 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 10:21:23,654 [SpringApplicationShutdownHook] INFO  [io.undertow] Undertow.java:259 - stopping server: Undertow - 2.2.14.Final
+2024-09-07 10:21:23,663 [SpringApplicationShutdownHook] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-09-07 10:21:23,668 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-09-07 10:21:23,668 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 10:21:23,669 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-09-07 10:21:23,794 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:205 - dynamic-datasource start closing ....
+2024-09-07 10:21:23,797 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2071 - {dataSource-1} closing ...
+2024-09-07 10:21:23,798 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2144 - {dataSource-1} closed
+2024-09-07 10:21:23,798 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:209 - dynamic-datasource all closed success,bye
+2024-09-07 10:35:12,096 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:55 - Starting WebApplication using Java 1.8.0_411 on Haiyang-Huang with PID 24148 (F:\Code\Web\Web_Program\entfrm-boot-master\entfrm-web\target\classes started by Lenovo in F:\Code\Web\Web_Program)
+2024-09-07 10:35:12,099 [main] DEBUG [com.entfrm.web.WebApplication] StartupInfoLogger.java:56 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-09-07 10:35:12,099 [main] INFO  [com.entfrm.web.WebApplication] SpringApplication.java:674 - The following profiles are active: dev
+2024-09-07 10:35:13,678 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-09-07 10:35:13,700 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring embedded WebApplicationContext
+2024-09-07 10:35:13,899 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:77 - 成功加载数据库驱动程序
+2024-09-07 10:35:14,000 [main] INFO  [c.b.d.d.provider.AbstractJdbcDataSourceProvider] AbstractJdbcDataSourceProvider.java:80 - 成功获取数据库连接
+2024-09-07 10:35:14,055 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:998 - {dataSource-1,master} inited
+2024-09-07 10:35:14,062 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:148 - dynamic-datasource - add a datasource named [master] success
+2024-09-07 10:35:14,063 [main] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:228 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-09-07 10:35:14,404 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleDept".
+2024-09-07 10:35:14,404 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 10:35:14,433 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.RoleMenu".
+2024-09-07 10:35:14,434 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.RoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 10:35:14,477 [main] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:342 - Can not find table primary key in Class: "com.entfrm.system.entity.UserRole".
+2024-09-07 10:35:14,478 [main] WARN  [c.b.mybatisplus.core.injector.DefaultSqlInjector] DefaultSqlInjector.java:56 - class com.entfrm.system.entity.UserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-09-07 10:35:15,980 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1220 - Using default implementation for ThreadExecutor
+2024-09-07 10:35:15,989 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] SchedulerSignalerImpl.java:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-09-07 10:35:15,990 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:229 - Quartz Scheduler v.2.3.2 created.
+2024-09-07 10:35:15,990 [main] INFO  [org.quartz.simpl.RAMJobStore] RAMJobStore.java:155 - RAMJobStore initialized.
+2024-09-07 10:35:15,991 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-09-07 10:35:15,991 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-09-07 10:35:15,991 [main] INFO  [org.quartz.impl.StdSchedulerFactory] StdSchedulerFactory.java:1378 - Quartz scheduler version: 2.3.2
+2024-09-07 10:35:15,991 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@200d1a3d
+2024-09-07 10:35:16,045 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,job_name,job_group,invoke_target,cron_expression,misfire_policy,concurrent,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_job WHERE del_flag='0'
+2024-09-07 10:35:16,058 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 10:35:16,070 [main] DEBUG [com.entfrm.quartz.mapper.JobMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 3
+2024-09-07 10:35:16,855 [main] INFO  [io.undertow] Undertow.java:120 - starting server: Undertow - 2.2.14.Final
+2024-09-07 10:35:16,992 [main] INFO  [org.xnio] Xnio.java:95 - XNIO version 3.8.4.Final
+2024-09-07 10:35:16,997 [main] INFO  [org.xnio.nio] NioXnio.java:58 - XNIO NIO Implementation Version 3.8.4.Final
+2024-09-07 10:35:17,028 [main] INFO  [org.jboss.threads] Version.java:52 - JBoss Threads version 3.1.0.Final
+2024-09-07 10:35:17,324 [main] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-09-07 10:35:17,331 [main] INFO  [com.entfrm.web.WebApplication] StartupInfoLogger.java:61 - Started WebApplication in 5.628 seconds (JVM running for 6.788)
+2024-09-07 10:36:11,605 [XNIO-1 task-1] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-07 10:36:29,071 [XNIO-1 task-1] WARN  [com.alibaba.druid.pool.DruidAbstractDataSource] DruidAbstractDataSource.java:1494 - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/entfrm?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&nullCatalogMeansCurrent=true, version : 1.2.8, lastPacketReceivedIdleMillis : 73006
+2024-09-07 10:36:29,074 [XNIO-1 task-1] DEBUG [com.entfrm.system.mapper.UserMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,user_name,password,nick_name,type,phone,sex,avatar,email,dept_id,dept_name,login_ip,login_time,status,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_user WHERE del_flag='0' AND (user_name = ?)
+2024-09-07 10:36:29,076 [XNIO-1 task-1] DEBUG [com.entfrm.system.mapper.UserMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: entfrm(String)
+2024-09-07 10:36:29,078 [XNIO-1 task-1] DEBUG [com.entfrm.system.mapper.UserMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 1
+2024-09-07 10:36:29,090 [XNIO-1 task-1] DEBUG [c.e.system.mapper.RoleMapper.selectRolesByUserId] BaseJdbcLogger.java:137 - ==>  Preparing: select distinct r.id, r.name, r.code, r.data_scope, r.sort, r.del_flag, r.create_time, r.remarks from sys_role r left join sys_user_role ur on ur.role_id = r.id left join sys_user u on u.id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+2024-09-07 10:36:29,092 [XNIO-1 task-1] DEBUG [c.e.system.mapper.RoleMapper.selectRolesByUserId] BaseJdbcLogger.java:137 - ==> Parameters: 1(Integer)
+2024-09-07 10:36:29,094 [XNIO-1 task-1] DEBUG [c.e.system.mapper.RoleMapper.selectRolesByUserId] BaseJdbcLogger.java:137 - <==      Total: 1
+2024-09-07 10:36:29,099 [XNIO-1 task-1] DEBUG [c.e.system.mapper.MenuMapper.selectPermsByRoleId] BaseJdbcLogger.java:137 - ==>  Preparing: select m.perms from sys_menu m left join sys_role_menu rm on m.id = rm.menu_id where rm.role_id = ? and m.id not in (select m.parent_id from sys_menu m inner join sys_role_menu rm on m.id = rm.menu_id and rm.role_id = ?) order by m.parent_id, m.sort
+2024-09-07 10:36:29,099 [XNIO-1 task-1] DEBUG [c.e.system.mapper.MenuMapper.selectPermsByRoleId] BaseJdbcLogger.java:137 - ==> Parameters: 1(Integer), 1(Integer)
+2024-09-07 10:36:29,102 [XNIO-1 task-1] DEBUG [c.e.system.mapper.MenuMapper.selectPermsByRoleId] BaseJdbcLogger.java:137 - <==      Total: 89
+2024-09-07 10:36:29,164 [XNIO-1 task-1] DEBUG [com.entfrm.log.aspect.SysLogAspect] SysLogAspect.java:55 - [类名]:com.entfrm.system.controller.AuthController,[方法]:login,[耗时]:124毫秒
+2024-09-07 10:36:29,269 [XNIO-1 task-1] DEBUG [c.e.s.mapper.MenuMapper.selectMenuListByRoleId] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT m.* FROM sys_menu m LEFT JOIN sys_role_menu rm ON m.id = rm.menu_id WHERE m.del_flag = 0 and m.type in ('M', 'C') AND rm.role_id = ? ORDER BY m.parent_id, m.sort
+2024-09-07 10:36:29,270 [XNIO-1 task-1] DEBUG [c.e.s.mapper.MenuMapper.selectMenuListByRoleId] BaseJdbcLogger.java:137 - ==> Parameters: 1(Integer)
+2024-09-07 10:36:29,280 [XNIO-1 task-1] DEBUG [c.e.s.mapper.MenuMapper.selectMenuListByRoleId] BaseJdbcLogger.java:137 - <==      Total: 24
+2024-09-07 10:36:29,774 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - ==>  Preparing: SELECT id,name,region,icon,bg_color,path,sort,create_by,create_time,update_by,update_time,remarks,del_flag FROM sys_shortcut WHERE del_flag='0' ORDER BY sort ASC
+2024-09-07 10:36:29,775 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - ==> Parameters: 
+2024-09-07 10:36:29,776 [XNIO-1 task-2] DEBUG [com.entfrm.system.mapper.ShortcutMapper.selectList] BaseJdbcLogger.java:137 - <==      Total: 2
+2024-09-07 10:37:54,779 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 10:37:54,780 [SpringApplicationShutdownHook] INFO  [io.undertow] Undertow.java:259 - stopping server: Undertow - 2.2.14.Final
+2024-09-07 10:37:54,784 [SpringApplicationShutdownHook] INFO  [io.undertow.servlet] ServletContextImpl.java:382 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-09-07 10:37:54,788 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-09-07 10:37:54,788 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-07 10:37:54,788 [SpringApplicationShutdownHook] INFO  [org.quartz.core.QuartzScheduler] QuartzScheduler.java:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-09-07 10:37:54,913 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:205 - dynamic-datasource start closing ....
+2024-09-07 10:37:54,916 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2071 - {dataSource-1} closing ...
+2024-09-07 10:37:54,917 [SpringApplicationShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2144 - {dataSource-1} closed
+2024-09-07 10:37:54,917 [SpringApplicationShutdownHook] INFO  [c.b.dynamic.datasource.DynamicRoutingDataSource] DynamicRoutingDataSource.java:209 - dynamic-datasource all closed success,bye

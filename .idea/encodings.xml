@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-biz/entfrm-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-biz/entfrm-monitor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-biz/entfrm-quartz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-biz/entfrm-quartz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-biz/entfrm-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-biz/entfrm-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-biz/entfrm-toolkit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-biz/entfrm-toolkit/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/entfrm-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/entfrm-base/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/entfrm-data/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/entfrm-data/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/entfrm-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/entfrm-log/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/entfrm-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/entfrm-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/entfrm-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/entfrm-swagger/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/entfrm-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entfrm-boot-master/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

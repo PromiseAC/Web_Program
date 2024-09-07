@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="entfrm-data" />
+        <module name="entfrm-toolkit" />
+        <module name="entfrm-base" />
+        <module name="entfrm-monitor" />
+        <module name="entfrm-quartz" />
+        <module name="entfrm-security" />
+        <module name="entfrm-log" />
+        <module name="entfrm-web" />
+        <module name="entfrm-system" />
+        <module name="entfrm-swagger" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
