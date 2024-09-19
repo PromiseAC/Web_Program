@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbd9194a-ee76-46e4-9c16-d4c34912a307" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Web_Program.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web_Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/09a5549b-83bb-488b-b3a3-c176a649cd42.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/09a5549b-83bb-488b-b3a3-c176a649cd42/storage_v2/_src_/schema/entfrm.Vtidsg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entfrm-boot-master/entfrm-ui/src/views/manager/person/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/entfrm-web/2024-09/debug.2024-09-07.0.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/entfrm-web/2024-09/debug.2024-09-12.0.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/entfrm-web/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/entfrm-web/debug.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +25,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2liwmak2tBRm4w5tIRLM1U1LW2y" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,7 +44,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.WebApplication.executor": "Run",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Code/Web/Web_Program/entfrm-boot-master/entfrm-ui/src/views/manager/person",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,11 +56,34 @@
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "http.certificates",
+    "ts.external.directory.path": "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\IntelliJ IDEA Ultimate\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true",
-    "应用程序.WebApplication.executor": "Run"
+    "应用程序.WebApplication.executor": "Run",
+    "数据库脚本.entfrm3.0.1.sql.executor": "Run"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora"
+    ],
+    "RunConfigurationTargetLRU": [
+      "70808f02-21f6-4ca3-9120-14b292b1d18d",
+      "09a5549b-83bb-488b-b3a3-c176a649cd42"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Code\Web\Web_Program\entfrm-boot-master\entfrm-ui\src\views\manager\person" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.dev">
+    <configuration name="entfrm3.0.1.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/entfrm-boot-master/db/entfrm3.0.1.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="09a5549b-83bb-488b-b3a3-c176a649cd42" />
+      <method v="2" />
+    </configuration>
     <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="entfrm-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.entfrm.web.WebApplication" />
@@ -98,10 +124,33 @@
       <option name="presentableId" value="Default" />
       <updated>1725676365318</updated>
       <workItem from="1725676367143" duration="357000" />
+      <workItem from="1725682625654" duration="23000" />
+      <workItem from="1726137438734" duration="124000" />
+      <workItem from="1726137572684" duration="1121000" />
+      <workItem from="1726713334013" duration="75000" />
+      <workItem from="1726721514567" duration="194000" />
+      <workItem from="1726741888063" duration="1373000" />
+      <workItem from="1726744418088" duration="346000" />
+      <workItem from="1726744773708" duration="1469000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/entfrm-boot-master/entfrm-web/src/main/java/com/entfrm/web/WebApplication.java</url>
+          <line>17</line>
+          <properties class="com.entfrm.web.WebApplication" method="configure">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
